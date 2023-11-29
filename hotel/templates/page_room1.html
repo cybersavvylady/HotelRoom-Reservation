@@ -1,0 +1,143 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- jQuery -->
+    <link rel="stylesheet" href="{% static 'CSS/jquery-ui.css' %}">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <title>White Space | Single Room</title>
+</head>
+<body>
+ <button type="button" class="hidden" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ </button>
+    <div id="roomPicture" class="row">
+        <div id="smallLogo">
+            <a href="page_main.html">
+                <img src="{% static 'image/index_icon/logo_block.svg' %}">
+                <p>White Space</p>
+            </a>
+        </div>
+        <div type="button" class="col-8" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="{% static 'image/room1/songesand-bed-frame-white__0550513_pe658194_s5.jpg' %}">
+        </div>
+        <div type="button" class="col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="{% static 'image/room1/songesand-bed-frame-white__1150686_pe884650_s5.jpg' %}">
+        </div>
+        <div type="button" class="col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="{% static 'image/room1/photo-1562663474-6cbb3eaa4d14.jpg' %}">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="{% static 'JS/reservation.js' %}"></script>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog model-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Single Room</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="{% static 'image/room1/index.jpg' %}" class="d-block w-100" alt="1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="{% static 'image/room1/songesand-bed-frame-white__1150686_pe884650_s5.jpg' %}" class="d-block w-100" alt="2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="{% static 'image/room1/photo-1562663474-6cbb3eaa4d14.jpg' %}" class="d-block w-100" alt="3">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="roomDetail" class="row">
+    <div id="leftSide" class="col-4">
+      <div id="text">
+          <h1>Single Room</h1>
+          <h5>Number of Customer: 1<br>
+              Bed Type: Single Size<br>
+              Bathroom: 1<br>
+          </h5>
+          <p>Single Room is only reserved for one guest. There is a bedroom with a single size bed and a private bathroom. Everything you need prepared for you: sheets and blankets, towels, soap and shampoo, hairdryer are provided. In the room there is AC and of course WiFi.<br><br><br>
+            \ \ \</p>
+          <ul class="clearfix">
+            <li><h5>Check in</h5><br><h4>15:00 - 21:00</h4></li>
+            <li><h5>Check out</h5><br><h4>10:00</h4></li>
+          </ul>
+      </div>
+      <div id="infoIcon">
+        <li><img src="{% static 'image/info_icon/wifi.svg' %}" alt="wifi_icon"><p>Wi-Fi</p></li>
+        <li class="noService"><img src="{% static 'image/info_icon/mountain-range.svg' %}" alt="mountain_icon"><p>View</p></li>
+        <li><img src="{% static 'image/info_icon/breakfast.svg' %}" alt="breaky_icon"><p>Breaky</p></li>
+        <li><img src="{% static 'image/info_icon/breeze.svg' %}" alt="breeze_icon"><p>Air Con</p></li>
+        <li><img src="{% static 'image/info_icon/no-smoke-symbol.svg' %}" alt="smoking_icon"><p>No Smoking</p></li>
+        <li class="noService"><img src="{% static 'image/info_icon/bar.svg' %}" alt="bar_icon"><p>Mini Bar</p></li>
+        <li><img src="{% static 'image/info_icon/crawling-baby-silhouette.svg' %}" alt="baby_icon"><p>Baby Friendly</p></li>
+        <li class="noService"><img src="{% static 'image/info_icon/room_service.svg' %}" alt="ring_icon"><p>Room Service</p></li>
+        <li><img src="{% static 'image/info_icon/dog.svg' %}" alt="pet_icon"><p>Pet Friendly</p></li>
+      </div>
+    </div>
+    <div id="datePicker" class="col-4">
+      <div id="priceInPage">
+        <h4 id="roomPrice">$99 AUD</h4><p>per night</p>
+        <input id= "setRoomPrice" type="number" name="" value="99">
+      </div>
+      <form id="guestForm" action="page_booking_completed.html" onsubmit="return(getName() && getPhone() && dateCheck())" method="get">
+        <div>
+          <label>Name:</label>
+          <input id="inputName" type="text" name="guestName" onblur="getName()">
+          <em id="errorName" class="errorText"></em>
+        </div>
+        <div>
+          <label>Phone Number:</label>
+          <input id="inputPhone" type="text" name="guestPhone" onblur="getPhone()">
+          <em id="errorPhone" class="errorText"></em>
+        </div>
+        <div id="dateBox">
+          <label>Dates:</label>
+          <label for="from"></label>
+          <input type="text" id="from" name="from" onblur="dateCheck()">
+          <label for="to">to</label>
+          <input type="text" id="to" name="to" onblur="dateCheck()">
+        </div>
+        <em id ="errorDate" class="errorText"></em>
+        <div id="priceCount"></div>
+        <button type="submit">Reserve</button>
+      </form>
+  </div>
+</body>
+</html>
